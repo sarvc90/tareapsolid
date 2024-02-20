@@ -12,6 +12,8 @@ public class EmpAlmacen extends Empleado{
     @Override
     public void hacerReporte(){
 
+       
+
 
     }
     

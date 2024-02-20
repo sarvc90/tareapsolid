@@ -1,43 +1,25 @@
 package com.tareapsolid;
 
+import java.util.List;
+
 public class Almacen {
 
-    private String producto;
-    private int stock;
+    private List<Producto> productos;
 
-    public Almacen( String producto, int stock){
-        this.producto=producto;
-        this.stock=stock;
+    public Almacen(List<Producto> productos) {
+        this.productos = productos;
+        
     }
 
-    public String getProducto() {
-        return producto;
+    public List<Producto> getProductos() {
+        return productos;
     }
 
-    public void setProducto(String producto) {
-        this.producto = producto;
+
+    public void setProductos(List<Producto> productos) {
+        this.productos = productos;
     }
 
-    public int getStock() {
-        return stock;
-    }
-
-    public void setStock(int stock) {
-        this.stock = stock;
-    }
-
-      
-
-    // ejemplo pricipio S de SOLID una sola responsabilidad 
-    public void incrementarStock(int cantidad) {
-        if (verificarNumNegativo(cantidad)) {
-            stock += cantidad;
-        }
-    }
-
-    private boolean verificarNumNegativo(int numero) {
-        return numero >= 0;
-    }
     
     
 }

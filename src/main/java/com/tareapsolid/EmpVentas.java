@@ -8,7 +8,7 @@ public class EmpVentas extends Empleado{
     }
 
     @Override
-    public String hacerReporte() {
+    public void hacerReporte() {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'hacerReporte'");
     }
