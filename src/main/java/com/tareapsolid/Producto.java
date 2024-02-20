@@ -1,6 +1,6 @@
 package com.tareapsolid;
 
-public class Producto{
+public abstract class Producto{
 
     private String nombre;
     private String referencia;
@@ -17,7 +17,7 @@ public class Producto{
     }
 
 
-    public String getNombre() {
+    public String getNombreProducto() {
         return nombre;
     }
 

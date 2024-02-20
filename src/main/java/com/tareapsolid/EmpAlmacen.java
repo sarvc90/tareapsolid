@@ -9,11 +9,15 @@ public class EmpAlmacen extends Empleado{
         this.almacen=almacen;
         //TODO Auto-generated constructor stub
     }
+
+
     @Override
     public void hacerReporte(){
 
-       
-
+        System.out.println("La cantidad de unidades disponibles en el almacén es: ");
+        for(Producto producto: almacen.getProductos()){
+            System.out.println("Producto: "+producto.getNombreProducto()+", Cantidad: "+producto.getStock());
+        }
 
     }
     

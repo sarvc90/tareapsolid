@@ -2,17 +2,25 @@ package com.tareapsolid;
 
 public class EmpVentas extends Empleado{
 
-    public EmpVentas(String nombre, String apellido, String id) {
+    private int numeroVentas;
+
+    public EmpVentas(String nombre, String apellido, String id, int numeroVentas) {
         super(nombre, apellido, id);
+        this.numeroVentas=numeroVentas;
         //TODO Auto-generated constructor stub
     }
 
-    @Override
-    public void hacerReporte() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'hacerReporte'");
+    public int getNumeroVentas(){
+        return numeroVentas;
     }
 
-    
-    
+
+    @Override
+    public void hacerReporte() {
+
+        System.out.println("Las ventas realizadas en el dia son: "+getNumeroVentas());
+
+        
+    }
+
 }
