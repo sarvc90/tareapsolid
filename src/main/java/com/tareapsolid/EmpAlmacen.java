@@ -10,7 +10,7 @@ public class EmpAlmacen extends Empleado{
         //TODO Auto-generated constructor stub
     }
 
-
+    // Ejemplo de principio de sustitución
     @Override
     public void hacerReporte(){
 

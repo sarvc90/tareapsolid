@@ -14,7 +14,7 @@ public class EmpVentas extends Empleado{
         return numeroVentas;
     }
 
-
+    // Ejemplo principio de sustitución
     @Override
     public void hacerReporte() {
 
