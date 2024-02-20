@@ -1,6 +1,7 @@
 package com.tareapsolid;
 
-public class Empleado extends Persona {
+public abstract class Empleado extends Persona {
+    
     private final String id;
     public Empleado (String nombre, String apellido, String id){
         super(nombre, apellido);
@@ -9,4 +10,8 @@ public class Empleado extends Persona {
     public String getId(){
         return id;
     }
+
+    public abstract void hacerReporte();
+
+    
 }
