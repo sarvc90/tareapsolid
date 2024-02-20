@@ -6,11 +6,13 @@ public class Tienda {
     private List<Producto> productos;
     private List<Empleado> empleados;
     private List<Cliente> clientes;
+    private List<Bebida> bebidas;
 
-    public Tienda(List<Producto> productos, List<Empleado> empleados, List<Cliente> clientes) {
+    public Tienda(List<Producto> productos, List<Empleado> empleados, List<Cliente> clientes, List<Bebida> bebidas) {
         this.productos = productos;
         this.empleados = empleados;
         this.clientes = clientes;
+        this.bebidas = bebidas;
     }
 
     public List<Producto> getProductos() {
@@ -23,6 +25,10 @@ public class Tienda {
 
     public List<Cliente> getClientes() {
         return clientes;
+    }
+
+    public List<Bebida> getBebidas(){
+        return bebidas;
     }
 
 }
